@@ -8,5 +8,5 @@ Tinytest.add('Table Generation', function(test){
 			tableClass: 'my-klass'
 		});
 
-	test.isTrue( table.nodeName == 'TABLE' );
+	test.isTrue( table.nodeName == 'TABLE' && table.classList.contains('my-klass') && table.id == tableId );
 });
