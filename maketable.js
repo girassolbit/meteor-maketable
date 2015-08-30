@@ -25,7 +25,6 @@ MakeTable = {
 	createdTables:[]
 };
 
-
 MakeTable.create.prototype.init = function( object ){
 
 	var table = document.createElement('table'),

@@ -1,8 +1,8 @@
 Package.describe({
-	name: 'judsonsilva:maketable',
+	name: 'gbit:maketable',
 	version: '0.0.1',
 	summary: 'A Blaze helper to creating html tables from objects',
-	git: '',
+	git: 'https://github.com/girassolbit/meteor-maketable.git',
 	documentation: 'README.md'
 });
 
@@ -15,6 +15,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
 	api.use('tinytest');
-	api.use('judsonsilva:maketable');
+	api.use('gbit:maketable');
 	api.addFiles('maketable-tests.js','client');
 });
