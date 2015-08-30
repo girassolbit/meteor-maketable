@@ -8,7 +8,7 @@ Create your HTML tables from objects in Blaze!
 Install using Meteor's package management system:
 
 ```bash
-> meteor add judsonsilva:maketable
+> meteor add gbit:maketable
 ```
 
 ## Testing (if you clone the package)
