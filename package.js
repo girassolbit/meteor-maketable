@@ -16,5 +16,5 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
 	api.use('tinytest');
 	api.use('judsonsilva:maketable');
-	api.addFiles('maketable-tests.js');
+	api.addFiles('maketable-tests.js','client');
 });
