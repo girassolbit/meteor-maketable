@@ -113,7 +113,7 @@ MakeTable = {
 			self[key] = value;
 		});
 
-		return typeof object == 'object' ? this.init( object ) : new Error("First parameter is not a object");
+		return typeof object == 'object' ? this.init( object ) : new Error("First parameter in MakeTable.create is not a object");
 	},
 	createdTables:[]
 };
