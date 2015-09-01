@@ -14,7 +14,11 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
-	api.use('tinytest');
+	api.use(['tinytest', 'ui', 'templating', 'blaze']);
 	api.use('gbit:maketable');
-	api.addFiles('maketable-tests.js','client');
+	api.addFiles([
+		'tests/tiny-tests.js',
+		'tests/maketable-test.html',
+		'tests/maketable-test.js'
+	],'client');
 });

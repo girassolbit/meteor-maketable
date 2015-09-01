@@ -24,3 +24,9 @@ Tinytest.add('Teste colspan and rowspan', function(test){
 
 	test.isTrue( $(table).find('tbody td').get(0).rowSpan == 2 );
 });
+
+Tinytest.add('Testing HTML generated', function(test){
+	var htmlTable = Blaze.toHTML( Template.test_00 );
+	console.log(htmlTable);
+	test.isTrue( !!htmlTable );
+});

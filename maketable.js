@@ -75,9 +75,9 @@ MakeTable.create.prototype.seed = function( object ){
 	_.each(	object, function( list, column ){
 		// Make title head of table
 		var th = document.createElement('th');
+
 		th.innerHTML = column;
 		th.className = self.thClass;
-		// Insert th element
 		tableHeadRow.appendChild(th);
 	
 		_.each(list, function( element, indexRow ){
@@ -86,8 +86,7 @@ MakeTable.create.prototype.seed = function( object ){
 				text = '';
 
 			if( typeof element == 'object' ){
-				text = element.text;
-				
+				text = element.text;				
 				if( element.hasOwnProperty('colspan') )	
 					console.dir(cell);
 					cell.colSpan = element.colspan;
