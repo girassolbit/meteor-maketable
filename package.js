@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'gbit:maketable',
-	version: '0.0.1',
+	version: '0.0.2',
 	summary: 'A Blaze helper to creating html tables from objects',
 	git: 'https://github.com/girassolbit/meteor-maketable.git',
 	documentation: 'README.md'

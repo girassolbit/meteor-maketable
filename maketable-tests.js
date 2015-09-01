@@ -24,4 +24,3 @@ Tinytest.add('Teste colspan and rowspan', function(test){
 
 	test.isTrue( $(table).find('tbody td').get(0).rowSpan == 2 );
 });
-
