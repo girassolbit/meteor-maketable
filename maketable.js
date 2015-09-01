@@ -82,9 +82,21 @@ MakeTable.create.prototype.seed = function( object ){
 	
 		_.each(list, function( element, indexRow ){
 			var tableRow = self.tableBody.childNodes[indexRow],
-				cell = tableRow.childNodes[ indexCell ];
+				cell = tableRow.childNodes[ indexCell ],
+				text = '';
 
-			cell.innerHTML = element;
+			if( typeof element == 'object' ){
+				text = element.text;
+				
+				if( element.hasOwnProperty('colspan') )	
+					console.dir(cell);
+					cell.colSpan = element.colspan;
+				if( element.hasOwnProperty('rowspan') )
+					cell.rowSpan = element.rowspan;
+
+			} else text = element;
+
+			cell.innerHTML = text;
 			cell.className = self.tdClass;
 		});
 

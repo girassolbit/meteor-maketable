@@ -15,3 +15,13 @@ Tinytest.add('First parameter type: object', function(test){
 	var	table = MakeTable.create("bug");
 	test.isTrue( table.constructor == Error );
 });
+
+Tinytest.add('Teste colspan and rowspan', function(test){	
+	var	table = MakeTable.create({
+		'Períodos': [{ rowspan: 2, text: '1ª' }],
+		'Notas': [10, 9]	
+	});
+
+	test.isTrue( $(table).find('tbody td').get(0).rowSpan == 2 );
+});
+
